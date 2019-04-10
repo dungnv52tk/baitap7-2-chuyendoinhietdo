@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<script>
+    let Temparature = function (c) {
+        this.c = c;
+        this.cToF = function () {
+            return this.c * 1.8 + 32;
+        };
+        this.cToK = function () {
+            return this.c + 273.15;
+        };
+    };
+    let celcius = new Temparature(parseInt(prompt('Enter degree Celcius: ')));
+    alert(celcius.cToF());
+    alert(celcius.cToK());
+</script>
+</body>
+</html>
